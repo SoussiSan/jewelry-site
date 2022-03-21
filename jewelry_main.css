@@ -1,0 +1,409 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body{
+    height: 3000px;
+    background-color: #efefef;
+}
+/* the nav bar */
+.navbar{
+    display: block;
+    box-shadow: 1px 1px 5px #666;
+    position: fixed;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255, 98%);
+    z-index: 99;
+}
+
+.navbar .logoTd{
+    width: 17%;
+}
+.navbar .optionsTd{
+    width: 43%;
+}
+.navbar .informationTd{
+    width: 40%;
+}
+.logo{
+    position: relative;
+    display: block;
+    width: 70%;
+    left: 25px;
+    top: 1px;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+.optionsU{
+    text-align: center;
+}
+.optionsU li{
+    position: relative;
+    top: 6px;
+    margin: 3%;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+
+}
+.button-effects span{
+    display: inline-block;
+    position: relative;
+    background-color: #b89511;
+    height: 0px;
+    width: 4px;
+
+}
+.information li{
+    margin: 3%;
+    cursor: pointer;
+}
+
+
+.small .logoL{
+    width: 30%;
+}
+.small .optionsL,
+.small .informationL{
+    position: relative;
+    width: 35%;
+    text-align: center;
+    top: 10px;
+    cursor: pointer;
+}
+.optionsD{
+    height: 0px;
+    text-align: left;
+    display: none;
+    z-index: 99;
+}
+.optionsD li{
+    margin: 10%;
+}
+.informationD{
+    height: 0px;
+    text-align: center;
+    position: relative;
+    top: 12px;
+    right: 90%;
+    z-index: 99;
+    display: none;
+}
+.informationD li{
+    display: flex;
+    margin-top: 8%;
+    cursor: pointer;
+}
+.informationD li i{
+
+    color: #b89511;
+}
+.informationD h3{
+    margin: 0 7%;
+}
+.small{
+    display: none;
+}
+/* the end of the navbar */
+
+/* the section */
+.section{
+    position: absolute;
+    background-image: url("myral.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section .mainn{
+    display: flex;
+    margin: 42% 0 20% 0%;
+}
+.section .mainn .bg-button{
+    width: 9%;
+
+}
+
+/* the end of the section */
+
+/* the article */
+.article{
+    position: absolute;
+}
+.article h1{
+    margin-top: 8%;
+    text-align-center;
+    font-size: 48px;
+    color: #663300;
+    font-family: 'Dancing Script', cursive;
+    left: 40%;
+    position: relative;
+    width: 20%;
+}
+.article .cards{
+    display: flex;
+
+}
+.article .cards .card{
+    width: 60%;
+    margin: 5% 3%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #666;
+    overflow: hidden;
+}
+.article .cards .card h2{
+    margin: 2% 40%;
+    color: #b89511;
+    font-size: 29px;
+}
+.article .cards .card h4 {
+    color: #009900;
+    margin: 1% 40%;
+}
+.article .cards .card img{
+    width: 80%;
+    height: 220px;
+    margin: 1% 10%;
+    border-radius: 120px;
+}
+.article .cards .card .bg-button{
+    width: 65%;
+    margin-bottom: 5%;
+}
+.article .cards .card p{
+    padding: 5%;
+}
+.brown-diamond-earth{
+    background-color: #663300;
+    width: 60%;
+    height: 470px;
+    margin: 5% auto;
+    padding: 2% 2%;
+}
+.diamond-earth{
+    width: 98%;
+    margin: auto;
+    box-shadow: 1px 0px 5px #fff;
+    background-color: #fff;
+}
+.diamond-earth .diamond-earth-h{
+    width: 90%;
+    margin: 0% -6%;
+    padding-top: 2%;
+}
+.diamond-earth .diamond-earth-img{
+    margin: 5% 25%;
+    width: 40%
+}
+.diamond-earth .diamond-earth-p{
+    margin: -5% 5% 0% 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    font-size: 19px;
+    text-align: center;
+}
+/* the end of the article */
+
+/*my footer*/
+footer{
+    margin: auto;
+    position: absolute;
+
+    left: 0px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    left: 0px;
+}
+.footer td{
+    text-align: center;
+    padding: 3%;
+    width: 33.333%;
+}
+.footer td li{
+    margin: 2% 3%;
+    display: flex;
+}
+.footer .contact{
+    margin-top:0;
+    }
+.footer td ul{
+    margin-top: 5%;
+}
+.footer li p{
+    margin-left: 14%;
+}
+.footer a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1%;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer li i{
+    font-size: 24px;
+}
+.footer .copy{
+    color: #b89511;
+    padding-top: 5%;
+}
+
+/*the end of my footer*/
+/* ___________________ */
+
+@media(min-width: 768px) and (max-width: 1199px){
+    .optionsU li{
+        font-size: 17px;
+        margin: 0.5%;
+    }
+    .information i{
+        font-size: 17px; !important
+        margin: 1%;
+    }
+    .information .search{
+        width: 150px;
+    }
+    .footer p,
+    .footer li a,
+    .footer li i{
+        font-size: 13px; !important
+        margin: 1%;
+    }
+    .section .mainn .bg-button{
+        padding: 0.9%;
+    }
+    .section .mainn .bg-button a{
+        font-size: 16px;
+    }
+    .article .cards .card p{
+        font-size: 14px;
+    }
+    .article .cards .card img{
+        height: 195px;
+    }
+    .article .cards .card h4,
+    .article .cards .card h2{
+        margin: 1% 37%;
+    }
+    .article h1{
+        font-size: 38px;
+        width: 25%;
+    }
+}
+/* ____________ */
+
+
+
+/**/
+
+@media(max-width: 767px){ /*mobile & tablet rules*/
+    .big{
+        display: none;
+    }
+    .small{
+        display: inline-block
+    }
+    .footer p,
+    .footer li a
+    {
+        font-size: 10px;
+        margin: 0.5%;
+    }
+    .footer li i{
+        font-size: 14px;
+    }
+    .footer td h2{
+        font-size: 15px;
+    }
+    .section .mainn .bg-button{
+        width: 15%;
+        margin-left: 12%;
+    }
+    .article .cards{
+        display: inline-block;
+    }
+    .article .cards .card{
+        width: 70%;
+        margin: 5% 15%; !important
+    }
+    .article .cards .card img{
+        width: 75%;
+        height: 240px;
+    }
+    .article h1{
+        font-size: 42px;
+        width: 45%;
+        left: 30%;
+
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){/*small screens rules*/
+
+
+}
+@media(min-width: 992px) and (max-width: 1199px){/*medium screen rules*/
+
+}
+@media(min-width: 1200px){/*large screen rules*/
+
+}
+
+
+
+/* my framework */
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.ul{
+    list-style-type: none;
+}
+.input{
+    padding: 2%;
+    radius: 8px;
+    box-shadow: 1px 1px 3px #888;
+    background-color: #fafafa;
+    display: flex;
+}
+.input input{
+    border: 0px solid #fff;
+    background-color: #fafafa;
+    width: 85%;
+}
+.full-width{
+    width: 100%;
+}
+
+.bg-button{
+    margin-left: 15%;
+    color: white;
+    background-color: #b89511;
+
+    text-align: center;
+    padding: 1.4%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.bg-button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+
+}
+.bg-button:hover{
+    background-color: #d2a914;
+}
+/* the end of my framework */
+

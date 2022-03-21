@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jewelry</title>
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <link type="text/css" rel="stylesheet" href="jewelry_main.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!-- ___________________________________________________________________________ -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script> <!-- font awesome-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">  <!-- rings font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- google icons menu -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> <!-- new font -->
+
+
+    <script>
+        $(document).ready(function(){
+            $('.button-effects').hover(function(){
+                $(this).find('span').animate({
+                    height: '18px'
+                }, 500);
+            }, function(){
+                $(this).find('span').animate({
+                    height: '0px'
+                }, 500);
+            });
+
+            $('.material-icons').hover(function(){
+                $('.optionsD').animate({
+                    height: '200px'
+                }, 800).fadeIn(1000);
+            }, function(){
+                $('.optionsD').fadeOut(800).animate({
+                    height: '0px'
+                }, 1000);
+            });
+            $('.fa-heart').hover(function(){
+                $('.informationD').animate({
+                    height: '250px'
+                }, 800).fadeIn(1000);
+            }, function(){
+                $('.informationD').fadeOut(800).animate({
+                    height: '0px'
+                }, 1000);
+            });
+            var marginNav = $('.navbar').height();
+            $('.section').css({
+                'margin-top': marginNav+'px'
+            });
+            var bottom = $('body').height();
+            $('footer').css({
+                'bottom': '-'+bottom+'px'
+            });
+            var marginSec = marginNav + $('.section').height();
+            $('.article').css({
+                'margin-top': marginSec+'px'
+            });
+            var len = $('.p').text().length;
+            if (len>60){
+                $('.p').each(function(){
+                    $(this).text($(this).text().substring(0,60)+'...');
+                });
+            }
+
+        })
+    </script>
+</head>
+<body>
+     <header><!-- the main header -->
+        <nav class="navbar big full-width">
+            <table class="full-width">
+                <tr>
+                    <td class="logoTd">
+                        <a class="logo" href="#">
+                            <img src="logoM.png" alt="logo" class="logoImg full-width">
+                        </a>
+                    </td>
+                    <td class="optionsTd">
+                        <div class="options">
+                            <ul class="optionsU ul">
+                                <li class="float-left button-effects">
+                                    <span></span>
+                                    rings
+                                </li>
+                                <li class="float-left button-effects">
+                                    <span></span>
+                                    necklaces
+                                </li>
+                                <li class="float-left button-effects">
+                                    <span></span>
+                                    earrings
+                                </li>
+                                <li class="float-left button-effects">
+                                    <span></span>
+                                    bracelets
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td class="informationTd">
+                        <ul class="information ul">
+                            <li class="float-right">
+                                <i class='fas fa-shopping-cart' style='font-size:24px'></i>
+                            </li>
+                            <li class="float-right">
+                                <i class='fas fa-user-alt' style='font-size:24px'></i>
+                            </li>
+                            <li class="float-right">
+                                <div class="search input">
+                                    <input name="search" class=" info-input"> <i class='fas fa-search' style='font-size:24px'></i>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+
+        </nav>
+        <nav class="navbar small full-width">
+            <ul class="ul small-ul">
+                <li class="float-left logoL">
+                     <a class="logo" href="#">
+                        <img src="logoM.png" alt="logo" class="logoImg full-width">
+                     </a>
+                </li>
+                <li class="float-left optionsL">
+                    <i class="material-icons" style="font-size:36px">menu</i>
+                    <div class="optionsD">
+                        <ul class="optionsU ul">
+                                <li class=" button-effects">
+                                    <span></span>
+                                    rings
+                                </li>
+                                <li class="button-effects">
+                                    <span></span>
+                                    necklaces
+                                </li>
+                                <li class="button-effects">
+                                    <span></span>
+                                    earrings
+                                </li>
+                                <li class="button-effects">
+                                    <span></span>
+                                    bracelets
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="float-left informationL">
+                    <i class='far fa-heart' style='font-size:36px'></i>
+                    <div class="informationD">
+                        <ul class="information ul">
+                            <li>
+                                <i class='fas fa-shopping-cart' style='font-size:24px'></i>
+                                <h3>My Basket</h3>
+                            </li>
+                            <li>
+                                <i class='fas fa-sign-in-alt' style='font-size:36px'></i>
+                                <h3>Log In</h3>
+                            </li>
+                            <li>
+                                <i class='far fa-newspaper' style='font-size:36px'></i>
+                                <h3>Sign In</h3>
+                            </li>
+                            <li>
+                                <div class="search input">
+                                    <input name="search" class=" info-input"> <i class='fas fa-search' style='font-size:24px'></i>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+     </header>
+     <section class="section full-width">
+        <div class="mainn full-width">
+            <div class="bg-button">
+                <a href="#">
+                    products
+                </a>
+            </div>
+            <div class="bg-button">
+                <a href="#">
+                    about us
+                </a>
+            </div>
+            <div class="bg-button">
+                <a href="#">
+                    info
+                </a>
+            </div>
+        </div>
+    </section>
+     <article class="article full-width">
+         <h1>New Products</h1>
+         <div class="cards full-width">
+             <div class="card">
+                 <h2>Ring</h2>
+                 <img src="rring.jpg">
+
+                 <h4>300.00$</h4>
+                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis exercitationem, facere iusto laudantium maxime molestiae mollitia</p>
+                 <div class="bg-button">
+                    <a href="#">
+                        show details
+                    </a>
+                </div>
+
+             </div>
+
+
+             <div class="card">
+                 <h2>Ring</h2>
+                 <img src="r.jpg">
+
+                 <h4>300.00$</h4>
+                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis exercitationem, facere iusto laudantium maxime molestiae mollitia</p>
+                 <div class="bg-button">
+                    <a href="#">
+                        show details
+                    </a>
+                </div>
+
+             </div>
+             <div class="card">
+                 <h2>Ring</h2>
+                 <img src="ring.jpg">
+
+                 <h4>300.00$</h4>
+                 <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis exercitationem, facere iusto laudantium maxime molestiae mollitia</p>
+                 <div class="bg-button">
+                    <a href="#">
+                        show details
+                    </a>
+                </div>
+
+             </div>
+
+         </div>
+         <div class="brown-diamond-earth">
+             <div class="diamond-earth">
+                 <h1 class="diamond-earth-h">Ethical Sourcing</h1>
+                 <img class="diamond-earth-img" src="diamon-earth.png">
+                 <p class="diamond-earth-p">
+                     As part of Richline Group, a Berkshire Hathaway Company, Myral Jewelry observes the highest
+                     ethical standards including conflict-free diamond policy, position on responsible
+                     mining, and conflict-free metals policy.
+                 </p>
+             </div>
+         </div>
+
+     </article>
+    <footer class="full-width">
+        <table class="footer full-width">
+            <tr>
+                <td class="contact">
+
+                    <ul class="ul">
+                        <li class="phone">
+                            <i class='fas fa-phone-alt'></i>
+                            <p>05601*****</p>
+                        </li>
+                        <li class="address">
+                            <i class='fas fa-home'></i>
+                            <p>constantine, Algeria</p>
+                        </li>
+                    </ul>
+                </td>
+                <td class="social-media">
+
+                    <ul class="ul">
+                        <li class="facebook">
+                            <i class='fab fa-facebook-f'></i>
+                            <a href="https://www.facebook.com/amer.aissous.5">https://www.facebook.com/amer.aissous.5</a>
+                        </li>
+                        <li class="instagram">
+                            <i class='fab fa-instagram'></i>
+                            <a href="https://www.facebook.com/amer.aissous.5">https://www.facebook.com/amer.aissous.5</a>
+                        </li>
+                        <li class="email">
+                            <i class='far fa-address-card'></i>
+                            <p>ameraissous@gmail.com</p>
+                        </li>
+                    </ul>
+                </td>
+                <td class="logoTd">
+                        <a class="logo" href="#">
+                            <img src="logoW.png" alt="logo" class="logoImg full-width">
+                        </a>
+                        <p class="copy">
+                            Copyright &copy; 2020 Myral Bijeaux. Powered By Khelalfa Soundous
+                        </p>
+
+                </td>
+
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
